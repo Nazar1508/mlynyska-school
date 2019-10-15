@@ -1,0 +1,67 @@
+/* css variables */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  color: #000;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header__top {
+  padding: 8px 0;
+  background-color: #367336;
+}
+
+.header__contacts {
+  display: flex;
+  justify-content: space-between;
+  font-style: normal;
+}
+
+.address {
+  position: relative;
+  margin: 0;
+  padding-left: 25px;
+  color: #fff;
+}
+
+.email {
+  position: relative;
+  padding-left: 25px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.address::before,
+.email::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.address::before {
+  background-image: url("../images/icons/map-icon.png");
+}
+
+.email::before {
+  background-image: url("../images/icons/mail-icon.png");
+}
+
+.email:hover {
+  text-decoration: underline;
+}
+
+.email:active {
+  opacity: 0.8;
+}
