@@ -1,9 +1,9 @@
-/* css variables */
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: normal;
   color: #000;
+  background-image: url("../images/main-img/school-pattern.jpg");
 }
 
 .container {
@@ -14,9 +14,27 @@ body {
   padding: 0 15px;
 }
 
+.container--white {
+  background-color: #fff;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .header__top {
-  padding: 8px 0;
+  position: relative;
+  padding: 14px 0;
   background-color: #367336;
+}
+
+.header__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .header__contacts {
@@ -64,4 +82,46 @@ body {
 
 .email:active {
   opacity: 0.8;
+}
+
+.header__title {
+  margin: 0;
+  padding: 80px 50px 15px 50px;
+  text-align: center;
+  font-size: 1.6rem;
+  background-image: url("../images/main-img/title-decor.jpg");
+  background-repeat: no-repeat;
+  background-position: center 32px;
+}
+
+.main-nav {
+  padding: 14px 0;
+  background-color: #367336;
+}
+
+.site-list__link {
+  margin: 0 15px;
+  padding: 5px 10px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 15px;
+  transition: 0.2s;
+}
+
+.site-list__link:not(.site-list__link--active):hover {
+  color: #000;
+  background-color: #fff;
+}
+
+.site-list__link:not(.site-list__link--active):active {
+  opacity: 0.8;
+}
+
+.site-list__link--active {
+  background-color: #837449;
+}
+
+.header__site-list {
+  display: flex;
+  justify-content: center;
 }
