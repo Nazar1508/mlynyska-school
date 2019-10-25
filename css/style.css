@@ -3,7 +3,7 @@ body {
   font-size: 1rem;
   font-weight: normal;
   color: #000;
-  background-image: url("../images/main-img/school-pattern.jpg");
+  background-image: url("../images/school-pattern.jpg");
 }
 
 .container {
@@ -16,6 +16,10 @@ body {
 
 .container--white {
   background-color: #fff;
+}
+
+.container--full-width {
+  padding: 0;
 }
 
 .list-reset {
@@ -89,7 +93,7 @@ body {
   padding: 80px 50px 15px 50px;
   text-align: center;
   font-size: 1.6rem;
-  background-image: url("../images/main-img/title-decor.jpg");
+  background-image: url("../images/logo-decor.jpg");
   background-repeat: no-repeat;
   background-position: center 32px;
 }
@@ -125,3 +129,11 @@ body {
   display: flex;
   justify-content: center;
 }
+
+/* Star styles for Swiper slider */
+.swiper-container .swiper-button-next:after, 
+.swiper-container .swiper-button-prev:after {
+  font-size: 35px;
+  color: #000;
+}
+/* End styles for Swiper slider */
