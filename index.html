@@ -11,75 +11,111 @@
   <link rel="stylesheet" href="lib/swiper/css/swiper.min.css">
 </head>
 <body>
-   <header class="header">
-      <div class="header__top">
-         <div class="container">
-            <a class="header__logo">
-               <img class="header__logo-image" src="images/logo.png" alt="logo">
-            </a>
-            <address class="header__contacts">
-               <p class="address">c. Млиниська, вул. Центральна</p>
-               <a class="email" href="mailto:email@gmail.com" aria-label="Електронна пошта">email@gmail.com</a>
-            </address>
-         </div>
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <a class="header__logo">
+          <img class="header__logo-image" src="images/logo.png" alt="logo">
+        </a>
+        <address class="header__contacts">
+          <p class="address">c. Млиниська, вул. Центральна 195</p>
+          <a class="email" href="mailto:email@gmail.com" aria-label="Електронна пошта">schkola.poschta@gmail.com</a>
+        </address>
       </div>
-      <div class="header__bottom">
-         <div class="container container--white">
-            <h1 class="header__title">
-               Навчально-виховний комплекс "Млиниська загальноосвітня школа І ступеня-дошкільний навчальний заклад"
-            </h1>
-         </div>
-         <nav class="main-nav">
-            <div class="container">
-               <ul class="header__site-list site-list list-reset">
-                  <li class="site-list__item">
-                    <a class="site-list__link site-list__link--active">Головна</a> 
-                  </li>
-                  <li class="site-list__item">
-                    <a class="site-list__link" href="">Школа</a>
-                  </li>
-                  <li class="site-list__item">
-                     <a class="site-list__link" href="">Дитячий садок</a>
-                  </li>
-                  <li class="site-list__item">
-                     <a class="site-list__link" href="">Події</a>
-                  </li>
-                  <li class="site-list__item">
-                     <a class="site-list__link" href="content.html">Документи</a>
-                  </li>
-               </ul>
+    </div>
+    <div class="header__bottom">
+      <div class="container container--white">
+        <h1 class="header__title">
+          Навчально-виховний комплекс "Млиниська загальноосвітня школа І ступеня-дошкільний навчальний заклад"
+        </h1>
+      </div>
+      <nav class="main-nav">
+        <div class="container">
+          <ul class="header__site-list site-list list-reset">
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--active">Головна</a> 
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="">Школа</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="">Дитячий садок</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="">Події</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="content.html">Документи</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="page-main">
+    <div class="page-main__slider">
+      <div class="container container--white container--large">
+        <!-- Swiper -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images/home-slider/slider-photo1.jpg" alt="Slide 1">
             </div>
-         </nav>
-      </div>
-   </header>
-   <main class="page-main">
-      <div class="container container--white container--full-width">
-         <div class="page-main__slider">
-            <!-- Swiper -->
-            <div class="swiper-container">
-               <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                     <img src="images/home-slider/slider-photo1.jpg" alt="Slide 1">
-                  </div>
-                  <div class="swiper-slide">
-                     <img src="images/home-slider/slider-photo2.jpg" alt="Slide 2">
-                  </div>
-                  <div class="swiper-slide">
-                     <img src="images/home-slider/slider-photo3.jpg" alt="Slide 3">
-                  </div>
-                  <div class="swiper-slide">
-                     <img src="images/home-slider/slider-photo4.jpg" alt="Slide 4">
-                  </div>
-                  <div class="swiper-slide">
-                     <img src="images/home-slider/slider-photo5.jpg" alt="Slide 5">
-                  </div>
-               </div>
-               <!-- Add Arrows -->
-               <div class="swiper-button-next"></div>
-               <div class="swiper-button-prev"></div>
+            <div class="swiper-slide">
+                <img src="images/home-slider/slider-photo2.jpg" alt="Slide 2">
             </div>
-         </div>
+            <div class="swiper-slide">
+                <img src="images/home-slider/slider-photo3.jpg" alt="Slide 3">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/home-slider/slider-photo4.jpg" alt="Slide 4">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/home-slider/slider-photo5.jpg" alt="Slide 5">
+            </div>
+          </div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
       </div>
+    </div>
+    <section class="about-us">
+      <div class="container container--white container--section">
+        <h2 class="site-title">Про навчальний заклад</h2>
+        <div class="about-us__content">
+          <img class="about-us__photo" src="images/about-us-photo.jpg" loading="lazy" alt="Млиниська загальноосвітня школа І ступеня-дошкільний навчальний заклад">
+          <div class="about-us__description">
+            <p class="about-us__text">
+                1 вересня 1987 року учні у селі Млиниська зайшли у класи новозбудованої
+                школи. Ідеальне місцерозташування на території парку, який відноситься до
+                памяток паркового мистецтва місцевого значення робить наш заклад
+                відповідальним за збереження історичної памяті. На одному подвір’ї
+                знаходиться і дитячий садок. У 2014 році утворився навчально-виховний
+                комплекс «Млиниська загальноосвітня школа І ступеня –дошкільний
+                навчальний заклад».
+            </p>
+            <p class="about-us__text">
+                Наш НВК - це сходинки, якими дитина піднімається до
+                знань, до духовних джерел народу, це святиня людяності, порядності, доброти.
+                Наші двері завжди гостинно відчинені для всіх. Кожна дитина у нас оточена
+                любов’ю,турботою і може розкрити свої здібності, вільно висловити свою
+                думку.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="location">
+      <div class="container container--white container--large container--section">
+        <h2 class="site-title">Місцезнаходження</h2>
+        <address class="location__contacts">
+          <p class="address address--black">c. Млиниська, вул. Центральна 195</p>
+          <a class="email email--black" href="mailto:email@gmail.com" aria-label="Електронна пошта">schkola.poschta@gmail.com</a>
+        </address>
+        <iframe class="location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10430.067362846972!2d25.743403070776115!3d49.19075424540223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4731a5b6480afa21%3A0x1aca2da1bae5e616!2z0JzQu9C40L3QuNGB0YzQutCwLCDQotC10YDQvdC-0L_RltC70YzRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjA!5e0!3m2!1suk!2sua!4v1572791316683!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen=""></iframe>
+      </div>
+    </section>
    </main>
    <footer></footer>
    <!-- Swiper JS -->
@@ -89,7 +125,7 @@
   <script>
     var swiper = new Swiper('.swiper-container', {
       autoplay: {
-         delay: 5000,
+        delay: 5000,
       },
       loop: true,
       navigation: {

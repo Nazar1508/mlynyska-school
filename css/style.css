@@ -1,3 +1,4 @@
+/* Start general styles */
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
@@ -18,8 +19,12 @@ body {
   background-color: #fff;
 }
 
-.container--full-width {
+.container--large {
   padding: 0;
+}
+
+.container--section {
+  padding-top: 60px;
 }
 
 .list-reset {
@@ -28,23 +33,14 @@ body {
   list-style: none;
 }
 
-.header__top {
-  position: relative;
-  padding: 14px 0;
-  background-color: #367336;
-}
-
-.header__logo {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.header__contacts {
-  display: flex;
-  justify-content: space-between;
-  font-style: normal;
+.site-title {
+  margin: 0;
+  padding-bottom: 35px;
+  text-align: center;
+  font-size: 1.8rem;
+  background-image: url("../images/title-decor.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
 }
 
 .address {
@@ -59,6 +55,11 @@ body {
   padding-left: 25px;
   color: #fff;
   text-decoration: none;
+}
+
+.address--black,
+.email--black {
+  color: #000;
 }
 
 .address::before,
@@ -80,12 +81,40 @@ body {
   background-image: url("../images/icons/mail-icon.png");
 }
 
+.address--black::before {
+  background-image: url("../images/icons/map-icon-black.png");
+}
+
+.email--black::before {
+  background-image: url("../images/icons/mail-icon-black.png");
+}
+
 .email:hover {
   text-decoration: underline;
 }
 
 .email:active {
   opacity: 0.8;
+}
+/* End general styles */
+
+.header__top {
+  position: relative;
+  padding: 14px 0;
+  background-color: #367336;
+}
+
+.header__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header__contacts {
+  display: flex;
+  justify-content: space-between;
+  font-style: normal;
 }
 
 .header__title {
@@ -128,6 +157,37 @@ body {
 .header__site-list {
   display: flex;
   justify-content: center;
+}
+
+.about-us__content {
+  display: table;
+  clear: both;
+  margin-top: 40px;
+}
+
+.about-us__photo {
+  float: left;
+  width: 50%;
+  margin-right: 15px;
+}
+
+.about-us__text {
+  margin: 0;
+  text-align: justify;
+  text-indent: 15px;
+}
+
+.location__contacts {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 5px;
+  padding: 0 15px;
+  font-style: normal;
+}
+
+.location__map {
+  width: 100%;
 }
 
 /* Star styles for Swiper slider */
